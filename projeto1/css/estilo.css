@@ -1,36 +1,39 @@
 body{
     font-family: arial, sans-serif;
-    background-color: lightgray;
-    margin: 0px;
+    background-color: #ccc;
+    margin: 0;
 }
 
 .header{
     background-image: url(../imagens/bg-3.jpg);
-    height: 550px;
+    height: 500px;
     background-position: right center;
     background-size: cover;
-    border: 1px solid transparent;
+    border-top: 1px solid transparent;
 }
 
 .header-content{
     color: white;
     text-align: center;
-    margin-top: 300px;  
+    margin-top: 150px;  
+}
+
+.header-content h1{
+    text-transform: uppercase;
+    font-size:46px;
+    text-shadow: 3px 3px 2px #333;
 }
 
 .header-content p{
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.8);
     border-bottom: 2px solid white;
     display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
-    line-height: 40px;
-    margin-top: 60px
+    padding: 10px;
 }
 
 .header nav ul{
     text-align: right;
-    margin: 20px 30px 0 0;
+    margin: 20px 50px 0 0;
 }
 
 .header nav li{
@@ -44,7 +47,8 @@ body{
 .header nav a{
     background: rgba(0, 0, 0,0.3);
     display: block;
-    padding: 10px;
+    padding: 15px;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
@@ -52,14 +56,9 @@ body{
 }
 
 .header nav a:hover{
-    background: rgba(0, 0, 0,0.6);
+    background: rgba(0, 0, 0,0.5);
 }
 
-.header-content h1{
-    font-size: 50px;
-    margin: auto;
-    text-shadow: 3px 3px 5px black;
-}
 
 main{
     width: 80%;
@@ -68,30 +67,39 @@ main{
 
 .content-section{
     background-color: white;
-    padding: 15px;
+    padding: 10px;
     margin-top: 15px;
+    overflow: auto;
 }
 
 .card{
-    display: inline-block;
-    margin-right: 23px;
-    margin-left: 23px;
-    color: white;
-    background-color: rgba(0,0,0,0.8);
+    width: 32%;
+    box-sizing: border-box;
+    float:left;
     
 }
 
+.card-1, .card-2{
+    margin-right: 2%;
+
+}
+
+.card img{
+    width: 100%;
+    display:block;
+}
+
 .card p{
-    padding-left: 10px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 12px;
-    line-height:20px;
+    color: white;
+    padding: 15px;
+    letter-spacing: 1.5px;
+    background-color: rgb(34, 34, 34);
+    margin: 0;
 
 }
 
 .content-section header{
-    border-bottom: 3px lightgray solid;
+    border-bottom: 2px lightgray solid;
     padding: 10px;
     background-color: #eee;
 }
