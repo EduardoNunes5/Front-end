@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-areas:"ads header header header ."
+                        "ads left_blue right_blue main white_space  "
+                        "ads rodape rodape rodape rodape";
+    grid-template-columns: 1.5fr 1fr 1fr 2fr .5fr;
+    background: #fbaf0c;
+}
+
+header{
+    grid-area: header;
+}
+
+#ad_side{
+    grid-area: ads;
+    background: lightblue;
+    height: 80vh;
+    width: 60%;
+    margin: .4em 0 0 7em;
+}
+
+.white_space{
+    background-color: white;
+}
+
+main{
+    grid-area: main;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    background: white;
+}
+
+header{
+    display: grid;
+    grid-template-areas: "menu  . picture2 .";
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+.header_nav{
+    grid-area: menu;
+    margin-bottom: .5em;
+}
+
+.header_ul button{
+    width: 95%;
+    margin: .4em 0 .1em 0;
+    border-radius: .5em;
+    border: 1px  solid black;
+    height: 2.3em;
+    background: white;
+}
+
+.header_ul button:hover{
+    background: rgb(210, 213, 198);
+}
+
+.header_blue_pic{
+    background: #1391dc;
+    border: 1px solid black;
+}
+
+.header_pic2{
+    background: #fbaf0c;
+}
+.header_ul{
+    list-style: none;
+
+}
+
+#left_info form legend{
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    margin: .5em;
+}
+
+#right_info{
+    grid-area: right_blue;
+    margin-right: .4em;
+}
+
+#left_info{
+    grid-area: left_blue;
+    height: 90vh;
+    margin-right: .4em;
+}
+
+#left_info form input{
+    display: block;
+    width: 50%;
+    font-size: .5em;
+    margin: .9em;
+}
+#left_info form button{
+    display: inline-block;
+    width: 30%;
+    margin-left: .3em;
+    border: 1px solid black;
+}
+
+.blue_container{
+    background: #1391dc;
+    color:white;
+    border: 1px solid black;
+}
+
+footer{
+    grid-area: rodape;
+    background: darkorange;
+}
+
+
+@media (max-width: 1100px){
+    #ad_side{
+        margin:.4em 0 0 5em;
+    }
+}
+
+@media (max-width: 900px){
+    #ad_side{
+        margin:.4em 0 0 3em;
+    }
+}
+
+@media (max-width: 500px){
+    @media (max-width: 900px){
+        #ad_side{
+            margin:.4em 0 0 0;
+        }
+    }
+
+}
